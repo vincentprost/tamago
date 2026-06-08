@@ -8,6 +8,8 @@ function App() {
         autoPlay
         muted
         loop
+        autoPlay
+        playsInline
         className="background-video"
       >
         <source src="https://vincentprost.synology.me:3006/videos/video_light.mp4" type="video/mp4" />  
