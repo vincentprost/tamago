@@ -8,7 +8,6 @@ function App() {
         autoPlay
         muted
         loop
-        autoPlay
         playsInline
         className="background-video"
       >
