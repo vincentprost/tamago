@@ -1,23 +1,19 @@
 
 import './App.css';
-import backgroundVideo from './video_light.mp4'; 
+//<source src="https://vincentprost.synology.me:3006/videos/video_light.mp4" type="video/mp4" />
 
 function App() {
   return (
-    <div className="hero">
+    <div>
       <video
         autoPlay
         muted
         loop
-        playsInline
+        className="background-video"
       >
-        <source src={backgroundVideo} type="video/mp4" />
-        
-        </video>
-        <div className="overlay">
-        <h1>SOON</h1>
-      </div>
-    </div>
+        <source src="https://vincentprost.synology.me:3006/videos/video_light.mp4" type="video/mp4" />  
+      </video>
+</div>
   );
 
 }
