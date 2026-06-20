@@ -60,8 +60,6 @@ const members = [
   },
 ];
 
-const albums = [
-];
 
 const tracks = [
   { title: 'Flyday Chinatown'},
