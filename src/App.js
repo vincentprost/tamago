@@ -6,7 +6,7 @@ const members = [
       initials: 'June',
       name: 'Lucille',
       role: 'Voix',
-      bio: 'Lucille, aka June, aka la the cow bell. Elle possède une technique vocale à faire perdre son rômaji à un japonais. Elle s est fait connaître il y a 10 ans avec son imitation de Pikachu. Déjà implantée sur la scène City Pop parisienne, elle souhaite avec ce groupe explorer d autres répertoires que son tube "pika pika"',
+      bio: 'Lucille, aka June, aka la cloche. Elle possède une technique vocale à faire perdre son rômaji à un japonais. Elle est surtout connue pour son imitation de Pikachu et souhaite avec ce groupe explorer d\'autres répertoires.',
       instruments: ['Chant', 'Chant harmonique'],
       links: { instagram: '#', spotify: '#' },
     },
@@ -14,14 +14,14 @@ const members = [
     initials: 'Etan',
     name: 'Etan Aboab',
     role: 'Batteur',
-    bio: 'HPI, TDAH et SFD, l\'initiateur du projet et leader du groupe a beaucoup d achronymes qui peuvent lui être étiquetés. Musicien de grand talent, batteur et trompettiste, il a grandi dans une famille de musiciens a Bondi. Ce Kylian Mbappé de la batterie a su monter ce groupe qui n est pour lui qu une opportunité professionnelle et un moyen de subsistance: "faire raquer tous les weebs de Paris"',
+    bio: 'HPI, TDAH et SDF, l\'initiateur du projet et leader du groupe a beaucoup d achronymes qui peuvent lui être étiquetés. Musicien de grand talent, batteur et trompettiste, il a grandi dans une famille de musiciens a Bondi. Ce Kylian Mbappé de la batterie a su monter ce groupe qui n est pour lui qu une opportunité professionnelle et un moyen de subsistance: "faire raquer tous les weebs de Paris"',
     instruments: ['Batterie', 'Chant harmonique'],
     links: { instagram: '#', bandcamp: '#' },
   },
   {
     initials: 'Guiese',
     name: 'Guiseppe Valentine',
-    role: 'Voix',
+    role: 'Guitariste',
     bio: 'Viré du groupe car il magnétisait trop le public féminin. ',
     instruments: ['Guitare'],
     links: { instagram: '#', spotify: '#' },
@@ -29,7 +29,7 @@ const members = [
   {
     initials: 'Carole',
     name: 'Carole',
-    role: 'Voix',
+    role: 'Guitariste',
     bio: 'Il fallait bien la meilleure guitariste de Zikapanam pour ce groupe. Elle remplace le belâtre italien qui nous faisait trop d ombre et ne comprenait jamais rien.',
     instruments: ['Guitare'],
     links: { instagram: '#', spotify: '#' },
@@ -45,8 +45,8 @@ const members = [
   {
     initials: 'Jérôme',
     name: 'Jérôme Trinh',
-    role: 'Basse',
-    bio: "Jérôme est le cerveau du groupe. Il manipule son synthé comme un vaisseau spatial pour nous envoyer au 7ème ciel. Il est capable de jouer 3 sons simultanément tout en calculant le PIB de la France.",
+    role: 'Claviers',
+    bio: "Jérôme est le cerveau du groupe. Il est capable de jouer 3 sons simultanément tout en calculant le PIB de la France.",
     instruments: ['Synthétiseur', 'Claviers'],
     links: { instagram: '#', spotify: '#'  },
   },
@@ -60,6 +60,17 @@ const members = [
   },
 ];
 
+const videos = {
+  concert: {
+    title: 'Concert à la Dame de Canton — 30/05/2026',
+    youtubeId: 'K3Yvy8hlShU', 
+  },
+  demo: {
+    title: 'Démo — Stay with me',
+    src: 'https://vincentprost.synology.me:3006/videos/video_light.mp4',
+    poster: '/assets/group_light.jpg',
+  },
+};
 
 const tracks = [
   { title: 'Flyday Chinatown'},
@@ -70,8 +81,16 @@ const tracks = [
   { title: '黄昏のBAY CITY'},
   { title: 'Cat\'s Eye'},
   { title: 'Midnight Cruisin\''},
-  { title: 'Ai yo kienaide (peut etre)'},
+  { title: 'Ai yo kienaide'},
+];
 
+
+const footerLinks = [
+  { label: 'Instagram', href: 'https://instagram.com/tamago_san_officiel' },
+  //{ label: 'Spotify', href: '#' },
+  //{ label: 'Bandcamp', href: '#' },
+  //{ label: 'YouTube', href: '#' },
+  { label: 'Contact', href: 'mailto:contact@tamagosan.fr' }
 ];
 
 const shows = [
@@ -152,7 +171,7 @@ export default function Tamagosan() {
           <p>
             Tamagosan est un groupe formé en 2025 à Paris.
             Leur musique fait renaître le city pop japonais des années 80 — cette scène née dans
-            l'effervescence économique du Japon, mêlant pop, funk, jazz, boogie et soft rock.
+            l'effervescence économique du Japon et mêlant pop, funk, jazz, boogie et soft rock.
           </p>
           <p>
             Ses membres sont des passionnés de cette musique fourmillant d'influences diverses et de créativité.
@@ -177,8 +196,8 @@ export default function Tamagosan() {
 
       {/* Discography */}
       <section id="disco" className="section">
-        <p className="section-label">Discographie</p>
         {/*
+        <p className="section-label">Discographie</p>
         <div className="discography">
           {albums.map((a) => (
             <div className="album" key={a.title}>
@@ -192,7 +211,7 @@ export default function Tamagosan() {
           ))}
         </div>*/}
 
-        <p className="section-label" style={{ marginTop: '3rem' }}>Titres phares</p>
+        <p className="section-label" style={{ marginTop: '3rem' }}>Titres</p>
         <div className="track-list">
           {tracks.map((t, i) => (
             <div className="track" key={t.title}>
@@ -201,6 +220,38 @@ export default function Tamagosan() {
               <span className="track-dur">{t.duration}</span>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Vidéos */}
+      <section id="videos" className="section">
+        <p className="section-label">Vidéos</p>
+
+        <div className="video-block">
+          <h4 className="video-title">{videos.concert.title}</h4>
+          <div className="video-embed">
+            <iframe
+              src={`https://www.youtube.com/embed/${videos.concert.youtubeId}`}
+              title={videos.concert.title}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </div>
+
+        <div className="video-block">
+          <h4 className="video-title">{videos.demo.title}</h4>
+          <div className="video-embed">
+            <video
+              controls
+              preload="metadata"
+              poster={videos.demo.poster || undefined}
+              src={videos.demo.src}
+            >
+              Votre navigateur ne supporte pas la lecture de cette vidéo.
+            </video>
+          </div>
         </div>
       </section>
       
@@ -228,16 +279,24 @@ export default function Tamagosan() {
       <footer className="footer">
         <span className="footer-logo">Tamagosan</span>
         <div className="footer-links">
-          {['Instagram', 'Spotify', 'Bandcamp', 'YouTube', 'Contact'].map((l) => (
-            <a href="#" key={l}>{l}</a>
+          {footerLinks.map((l) => (
+            <a
+              href={l.href}
+              key={l.label}
+              target={l.href.startsWith('http') ? '_blank' : undefined}
+              rel={l.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+            >
+              {l.label}
+            </a>
           ))}
         </div>
         <p>© 2026 Tamagosan. Tous droits réservés.</p>
       </footer>
 
+      
+
       {/* Modal */}
       <MemberModal member={activeMember} onClose={() => setActiveMember(null)} />
-
     </div>
   );
 }
