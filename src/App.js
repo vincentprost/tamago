@@ -14,7 +14,7 @@ const members = [
     initials: 'Etan',
     name: 'Etan Aboab',
     role: 'Batteur',
-    bio: 'HPI, TDAH et SDF, l\'initiateur du projet et leader du groupe a beaucoup d achronymes qui peuvent lui être étiquetés. Musicien de grand talent, batteur et trompettiste, il a grandi dans une famille de musiciens a Bondi. Ce Kylian Mbappé de la batterie a su monter ce groupe qui n est pour lui qu une opportunité professionnelle et un moyen de subsistance: "faire raquer tous les weebs de Paris"',
+    bio: 'HPI, TDAH et SDF, l\'initiateur du projet et leader du groupe a beaucoup d achronymes qui peuvent lui être étiquetés. Musicien de grand talent, batteur et trompettiste, il a grandi dans une famille de musiciens a Bondi. Ce Kylian Mbappé de la batterie a su monter ce groupe qui n est pour lui qu\'une opportunité professionnelle et un moyen de subsistance: "faire raquer tous les weebs de Paris"',
     instruments: ['Batterie', 'Chant harmonique'],
     links: { instagram: '#', bandcamp: '#' },
   },
@@ -175,7 +175,7 @@ export default function Tamagosan() {
           </p>
           <p>
             Ses membres sont des passionnés de cette musique fourmillant d'influences diverses et de créativité.
-           Ils proposent des reprises des classiques du genre comme Stay with me, mais aussi des pépites plus méconnus comme blabla. 
+           Ils proposent des reprises des classiques du genre comme Stay With Me, mais aussi des pépites plus méconnus comme blabla. 
           </p>
         </div>
       </section>
