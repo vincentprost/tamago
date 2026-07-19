@@ -63,7 +63,9 @@ const members = [
 const videos = {
   concert: {
     title: 'Concert à la Dame de Canton — 30/05/2026',
-    youtubeId: 'K3Yvy8hlShU', 
+    //youtubeId: 'K3Yvy8hlShU', 
+    src: 'https://vincentprost.synology.me:3006/videos/tamago_dame_de_canton.mov',
+    poster: '/assets/canton.jpg',
   },
   demo: {
     title: 'Démo — Stay with me',
@@ -228,7 +230,7 @@ export default function Tamagosan() {
       <section id="videos" className="section">
         <p className="section-label">Vidéos</p>
 
-        <div className="video-block">
+        {/*<div className="video-block">
           <h4 className="video-title">{videos.concert.title}</h4>
           <div className="video-embed">
             <iframe
@@ -238,6 +240,20 @@ export default function Tamagosan() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             />
+          </div>
+        </div>*/}
+
+        <div className="video-block">
+          <h4 className="video-title">{videos.concert.title}</h4>
+          <div className="video-embed">
+            <video
+              controls
+              preload="metadata"
+              poster={videos.concert.poster || undefined}
+              src={videos.concert.src}
+            >
+              Votre navigateur ne supporte pas la lecture de cette vidéo.
+            </video>
           </div>
         </div>
 
