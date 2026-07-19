@@ -73,10 +73,11 @@ const videos = {
 };
 
 const tracks = [
-  { title: 'Flyday Chinatown'},
+  { title: 'Fly-Day Chinatown'},
   { title: '街のドルフィン (Dolphin in Town)'},
-  { title: 'Meiko Nakahara'},
+  { title: 'Fantasy'},
   { title: '竹内まりや - Plastic Love'},
+   {title: '真夜中のドア〜Stay With Me'},
   { title: 'Mizuiro no Ame'},
   { title: '黄昏のBAY CITY'},
   { title: 'Cat\'s Eye'},
@@ -175,7 +176,7 @@ export default function Tamagosan() {
           </p>
           <p>
             Ses membres sont des passionnés de cette musique fourmillant d'influences diverses et de créativité.
-           Ils proposent des reprises des classiques du genre comme Stay With Me, mais aussi des pépites plus méconnus comme blabla. 
+           Ils proposent des reprises des classiques du genre comme Stay With Me, Fly-Day Chinatown ou Fantasy. 
           </p>
         </div>
       </section>
