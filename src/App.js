@@ -94,7 +94,7 @@ const footerLinks = [
   //{ label: 'Spotify', href: '#' },
   //{ label: 'Bandcamp', href: '#' },
   //{ label: 'YouTube', href: '#' },
-  { label: 'Contact', href: 'mailto:contact@tamagosan.fr' }
+  { label: 'Contact', href: 'mailto:tamagosan.contact@gmail.com' }
 ];
 
 const shows = [
