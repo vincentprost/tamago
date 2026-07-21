@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Tamagosan.css';
 
+
 const members = [
     {
       initials: 'June',
@@ -22,7 +23,7 @@ const members = [
     initials: 'Guiese',
     name: 'Guiseppe Valentine',
     role: 'Guitariste',
-    bio: 'Viré du groupe car il magnétisait trop le public féminin. ',
+    bio: 'Viré du groupe car il magnétisait trodp le public féminin. ',
     instruments: ['Guitare'],
     links: { instagram: '#', spotify: '#' },
   },
@@ -145,9 +146,10 @@ export default function Tamagosan() {
       <section className="hero">
         <div className="hero-content">
           <h1>Tamagosan</h1>
+          <p className="hero-subtitle">卵さんのスーパーバンド</p>
           <nav className="nav-pills">
             <button className="pill" onClick={() => scrollTo('presentation')}>À propos</button>
-            <button className="pill" onClick={() => scrollTo('disco')}>Discographie</button>
+            <button className="pill" onClick={() => scrollTo('videos')}>Discographie</button>
             <button className="pill" onClick={() => scrollTo('shows')}>Concerts</button>
           </nav>
         </div>
@@ -177,7 +179,7 @@ export default function Tamagosan() {
             l'effervescence économique du Japon et mêlant pop, funk, jazz, boogie et soft rock.
           </p>
           <p>
-            Ses membres sont des passionnés de cette musique fourmillant d'influences diverses et de créativité.
+            Ses membres sont des passionnés de cette musique qui fourmille d'influences diverses et de créativité.
            Ils proposent des reprises des classiques du genre comme Stay With Me, Fly-Day Chinatown ou Fantasy. 
           </p>
         </div>
@@ -198,8 +200,7 @@ export default function Tamagosan() {
       </section>
 
       {/* Discography */}
-      <section id="disco" className="section">
-        {/*
+      {/*<section id="disco" className="section">
         <p className="section-label">Discographie</p>
         <div className="discography">
           {albums.map((a) => (
@@ -212,7 +213,7 @@ export default function Tamagosan() {
               <span className="album-year">{a.year}</span>
             </div>
           ))}
-        </div>*/}
+        </div>
 
         <p className="section-label" style={{ marginTop: '3rem' }}>Titres</p>
         <div className="track-list">
@@ -224,7 +225,7 @@ export default function Tamagosan() {
             </div>
           ))}
         </div>
-      </section>
+      </section>*/}
 
       {/* Vidéos */}
       <section id="videos" className="section">
