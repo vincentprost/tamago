@@ -13,7 +13,7 @@ const members = [
     },
   {
     initials: 'Etan',
-    name: 'Etan Aboab',
+    name: 'Etan Sanzache',
     role: 'Batteur',
     bio: 'HPI, TDAH et SDF, l\'initiateur du projet et leader du groupe a beaucoup d achronymes qui peuvent lui être étiquetés. Musicien de grand talent, batteur et trompettiste, il a grandi dans une famille de musiciens a Bondi. Ce Kylian Mbappé de la batterie a su monter ce groupe qui n est pour lui qu\'une opportunité professionnelle et un moyen de subsistance: "faire raquer tous les weebs de Paris"',
     instruments: ['Batterie', 'Chant harmonique'],
@@ -145,7 +145,7 @@ export default function Tamagosan() {
       {/* Hero */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Tamagosan</h1>
+          <h1>Tamagosan !!</h1>
           <p className="hero-subtitle">卵さんのスーパーバンド</p>
           <nav className="nav-pills">
             <button className="pill" onClick={() => scrollTo('presentation')}>À propos</button>
