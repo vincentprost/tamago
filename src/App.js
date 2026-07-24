@@ -73,6 +73,11 @@ const videos = {
     src: 'https://vincentprost.synology.me:3006/videos/video_light.mp4',
     poster: '/assets/group_light.jpg',
   },
+  mashup: {
+    title: 'Mashup',
+    src: 'https://vincentprost.synology.me:3006/videos/FadeOut - VHS 1 light.mov',
+    poster: '/assets/group_light.jpg'
+  }
 };
 
 const tracks = [
@@ -245,6 +250,20 @@ export default function Tamagosan() {
         </div>*/}
 
         <div className="video-block">
+          <h4 className="video-title">{videos.mashup.title}</h4>
+          <div className="video-embed">
+            <video
+              controls
+              preload="metadata"
+              poster={videos.mashup.poster || undefined}
+              src={videos.mashup.src}
+            >
+              Votre navigateur ne supporte pas la lecture de cette vidéo.
+            </video>
+          </div>
+        </div>
+
+        <div className="video-block">
           <h4 className="video-title">{videos.concert.title}</h4>
           <div className="video-embed">
             <video
@@ -292,6 +311,19 @@ export default function Tamagosan() {
           ))}
         </div>
       </section>
+
+      {/* Fiche technique */}
+    <section className="section fiche-technique">
+      <p className="section-label">Fiche technique</p>
+      <a
+        href="/documents/fiche_technique.pdf"
+        download="fiche-technique-tamagosan.pdf"
+        target="_blank"
+        className="download-btn"
+      >
+        Télécharger la fiche technique
+      </a>
+    </section>
 
       {/* Footer */}
       <footer className="footer">

@@ -489,3 +489,20 @@
   color: #ffffff;
   letter-spacing: -0.03em;
 }
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 1px solid #3a3a3a;
+  color: #ccc;
+  font-size: 13px;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+.download-btn:hover {
+  border-color: #888;
+  color: #fff;
+}
