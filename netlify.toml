@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/videos/*"
+  to = "https://vincentprost.synology.me:3006/videos/:splat"
+  status = 200
+  force = true

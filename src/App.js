@@ -65,7 +65,7 @@ const videos = {
   concert: {
     title: 'Concert à la Dame de Canton — 30/05/2026',
     //youtubeId: 'K3Yvy8hlShU', 
-    src: 'https://vincentprost.synology.me:3006/videos/tamago_dame_de_canton.mov',
+    src: '/videos/tamago_dame_de_canton.mov',
     poster: '/assets/canton.jpg',
   },
   demo: {
