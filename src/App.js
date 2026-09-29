@@ -70,12 +70,12 @@ const videos = {
   },
   demo: {
     title: 'Démo — Stay with me',
-    src: 'https://vincentprost.synology.me:3006/videos/video_light.mp4',
+    src: '/videos/video_light.mp4',
     poster: '/assets/group_light.jpg',
   },
   mashup: {
     title: 'Mashup',
-    src: 'https://vincentprost.synology.me:3006/videos/FadeOut - VHS 1 light.mov',
+    src: 'videos/FadeOut - VHS 1 light.mov',
     poster: '/assets/group_light.jpg'
   }
 };
