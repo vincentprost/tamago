@@ -103,6 +103,7 @@ const footerLinks = [
 ];
 
 const shows = [
+  { day: '26', month: 'Oct', venue: 'La Maz — Paris', address: '9 rue Turbigo, 75001 Paris' },
 ];
 
 function scrollTo(id) {
@@ -306,7 +307,7 @@ export default function Tamagosan() {
                 <h4>{s.venue}</h4>
                 <p>{s.address}</p>
               </div>
-              <button className="ticket-btn">Réserver</button>
+              {/*<button className="ticket-btn">Réserver</button>*/}
             </div>
           ))}
         </div>
